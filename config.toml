@@ -1,4 +1,4 @@
-baseurl = "https://attajak.gitlab.io/beautifulhugo/"
+baseurl = "https://attajak.netlify.app"
 contentdir    = "content"
 layoutdir     = "layouts"
 publishdir    = "public"
