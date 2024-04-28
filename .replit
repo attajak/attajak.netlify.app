@@ -4,6 +4,11 @@ entrypoint = "README.md"
 [nix]
 channel = "stable-23_11"
 
+[deployment]
+build = ["hugo"]
+deploymentTarget = "static"
+publicDir = "public"
+
 [[ports]]
 localPort = 8080
 externalPort = 80

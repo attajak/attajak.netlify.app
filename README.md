@@ -4,6 +4,8 @@ Example [Hugo] website using GitLab with [Netlify](https://www.netlify.com/).
 
 ---
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e7bbc17c-a776-4e2e-abf7-1f36f2bdd9a8/deploy-status)](https://app.netlify.com/sites/attajak/deploys)
+
 ## Netlify Configuration
 
 In order to build this site with Netlify, simply log in or register at 
