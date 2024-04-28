@@ -1,19 +1,25 @@
----
-title: About me
-subtitle: Why you'd want to hang out with me
-comments: false
----
++++
+title = 'About'
+subtitle = 'About me'
+date = 2024-04-28T16:32:15Z
+draft = false
++++
 
-My name is The Dude. I have the following qualities:
+## ชื่อ
+คิง อัฏฐจักร จันทร์รักษ์
 
-- I rock a great beard
-- I'm extremely loyal to my friends
-- I like bowling
+## เกิด
+๘ สิงหาฯ
 
-That rug really tied the room together.
+## กรุ๊ปเลือด
+เอ (A)
 
-### my history
+## ชอบ
+ดูหนัง-อนิเมะ ฟังเพลง เล่นเกม
 
-To be honest, I'm having some trouble remembering right now, so why don't you
-just watch [my movie](https://en.wikipedia.org/wiki/The_Big_Lebowski) and it
-will answer **all** your questions.
+## คำคม
+> แค่อยากทำหน้าที่ให้ดีที่สุด ไม่ได้อยากเป็นวีรบุรุษของใคร
+
+> งานมีขี้บ่อย งานน้อยไม่ค่อยขี้ งานไม่มีไม่ขี้เลย
+
+![Attajak](/favicon/mstile-150x150.png)
