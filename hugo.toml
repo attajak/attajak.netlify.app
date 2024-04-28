@@ -1,4 +1,4 @@
-baseurl = "https://username.github.io"
+baseurl = "https://attajak.netlify.app"
 DefaultContentLanguage = "en"
 title = "Attajak Janrak"
 # Using theme as git submodule 
