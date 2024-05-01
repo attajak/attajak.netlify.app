@@ -2,7 +2,7 @@
 title = 'SwiftKey Keyboard: แป้นพิมพ์ AI ที่ดีที่สุดสำหรับ Android และ iOS'
 subtitle = ''
 date = 2024-04-28T16:44:03Z
-categoties = ['phone']
+categories = ['phone']
 tags = ['microsoft', 'swiftkey', 'keyboard', 'copilot']
 draft = false
 +++

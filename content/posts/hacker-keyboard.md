@@ -1,8 +1,8 @@
 +++
 title = "Hacker's Keyboard บน Android พิมพ์โค้ดเหมือนโปร!"
-subtitle = ''
+subtitle = ""
 date = 2024-04-28T16:56:03Z
-categoties = ['phone']
+categories = ['phone']
 tags = ['android', 'hacker', 'keyboard']
 draft = false
 +++
