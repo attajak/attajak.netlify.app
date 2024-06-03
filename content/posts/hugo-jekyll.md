@@ -1,6 +1,6 @@
 +++
 title = 'เปรียบเทียบ Hugo กับ Jekyll'
-subtitle =
+subtitle = 'Hugo vs Jekyll'
 date = 2024-06-03T12:36:20Z
 categoties = ["Static Site Generator s"]
 tags = [Hugo", "Jekyll"]
