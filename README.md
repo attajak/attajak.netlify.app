@@ -36,11 +36,13 @@ your site can be accessed under `localhost:1313/hugo/`.
 
 The theme used is adapted from http://themes.gohugo.io/beautifulhugo/.
 
+<!--
 ## Did you fork this project?
 
 If you forked this project for your own use, please go to your project's
 **Settings** and remove the forking relationship, which won't be necessary
 unless you want to contribute back to the upstream project.
+-->
 
 ## Troubleshooting
 
