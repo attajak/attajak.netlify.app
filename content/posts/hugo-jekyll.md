@@ -2,7 +2,7 @@
 title = "เปรียบเทียบ Hugo กับ Jekyll"
 subtitle = "Hugo vs Jekyll"
 date = 2024-06-03T12:36:20Z
-categoties = ["SSGs"]
+categories = ["Static Site Generators"]
 tags = ["Hugo", "Jekyll"]
 draft = false
 +++
