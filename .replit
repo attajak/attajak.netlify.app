@@ -1,4 +1,4 @@
-run = "hugo && miniserve public --index index.html"
+run = "hugo server --bind=0.0.0.0"
 entrypoint = "README.md"
 
 [nix]
@@ -10,5 +10,5 @@ deploymentTarget = "static"
 publicDir = "public"
 
 [[ports]]
-localPort = 8080
+localPort = 1313
 externalPort = 80
