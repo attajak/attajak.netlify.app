@@ -4,7 +4,7 @@ title = "Attajak"
 # Using theme as git submodule 
 # theme = "beautifulhugo"
 # Or when using theme as hugo module
-theme = "github.com/halogenica/beautifulhugo"
+# theme = "github.com/halogenica/beautifulhugo"
 pygmentsStyle = "trac"
 pygmentsUseClasses = true
 pygmentsCodeFences = true
@@ -14,6 +14,7 @@ pygmentOptions = "linenos=inline"
 #disqusShortname = "XXX"
 #googleAnalytics = "XXX"
 
+[modules]
 [[module.imports]]
   path = "github.com/halogenica/beautifulhugo"
 
@@ -52,7 +53,7 @@ pygmentOptions = "linenos=inline"
 [Author]
   # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
   name = "Attajak Janrak"
-  website = "https://attajak.wordpress.com"
+  website = "https://attajak.github.io"
   email = "janrak@gmail.com"
   facebook = "attajak"
   github = "attajak"
