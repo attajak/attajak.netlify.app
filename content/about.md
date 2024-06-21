@@ -22,4 +22,4 @@ draft = false
 
 > งานมีขี้บ่อย งานน้อยไม่ค่อยขี้ งานไม่มีไม่ขี้เลย
 
-![Attajak](/favicon/mstile-150x150.png)
+![Attajak](/favicon/android-chrome-512x512.png)
