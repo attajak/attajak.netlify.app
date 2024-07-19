@@ -1,7 +1,8 @@
 public/
 resources/
+_vendor/
 .hugo_build.lock
-
+go.sum
 node_modules
 package-lock.json
 assets/jsconfig.json
