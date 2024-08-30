@@ -6,3 +6,6 @@ go.sum
 node_modules
 package-lock.json
 assets/jsconfig.json
+
+# Local Netlify folder
+.netlify
