@@ -1,8 +1,8 @@
 [build]
-  command = "hugo --gc --minify"
+  command = "hugo --gc --minify --logLevel info"
   # functions = "netlify/functions"
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.128.0"
+  HUGO_VERSION = "0.133.1"
 
