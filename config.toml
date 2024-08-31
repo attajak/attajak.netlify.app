@@ -16,14 +16,14 @@ pygmentOptions = "linenos=inline"
 
 [modules]
   [[module.imports]]
-  path = "github.com/halogenica/beautifulhugo"
+    path = "github.com/halogenica/beautifulhugo"
 
 [Params]
-  # homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
+  homeTitle = "Attajak" # Set a different text for the header on the home page
   subtitle = "https://attajak.netlify.app"
   mainSections = ["post","posts"]
-  logo = "favicon/android-chrome-512x512.png" # Expecting square dimensions
-  favicon = "favicon/favicon.ico"
+  logo = "favicon/apple-touch-icon.png" # Expecting square dimensions
+  favicon = "favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
   rss = true
