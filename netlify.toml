@@ -1,8 +1,16 @@
 [build]
-  command = "hugo --gc --minify --logLevel info"
+  # command = "hugo --gc --minify --logLevel info"
   # functions = "netlify/functions"
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.133.1"
+NODE_VERSION = "20.17.0"
+HUGO_VERSION = "0.134.1"
+HUGO_ENABLEGITINFO = "true"
+GO_VERSION = "1.23.0"
 
+[context.production]
+command = "hugo --logLevel info --gc --minify"
+
+[context.production.environment]
+HUGO_ENV = "production"
