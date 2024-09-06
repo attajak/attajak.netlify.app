@@ -93,22 +93,29 @@ pygmentOptions = "linenos=inline"
 [[menu.main]]
     identifier = "blog"
     name = "Blog"
-    url = "posts"
+    # url = "posts"
     weight = 2
+
+[[menu.main]]
+    identifier = "blog"
+    parent = "blog"
+    name = "Posts"
+    url = "posts"
+    weight = 1
 
 [[menu.main]]
     parent = "blog"
     identifier = "categories"
     name = "Categories"
     url = "categories"
-    weight = 1
+    weight = 2
 
 [[menu.main]]
     parent = "blog"
     identifier = "tags"
     name = "Tags"
     url = "tags"
-    weight = 2
+    weight = 3
 
 [[menu.main]]
     identifier = "about"
