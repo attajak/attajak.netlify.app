@@ -1,12 +1,12 @@
 +++
 title = "เปรียบเทียบ Hugo กับ Jekyll"
-subtitle = "Hugo vs Jekyll"
+# subtitle = "Hugo vs Jekyll"
 date = 2024-06-03T12:36:20Z
 categories = ["Static Site Generators"]
 tags = ["Hugo", "Jekyll"]
 draft = false
 +++
-# เปรียบเทียบ Hugo กับ Jekyll
+<!-- # เปรียบเทียบ Hugo กับ Jekyll -->
 ## ภาษาที่ใช้
  * Hugo เขียนด้วย Go ภาษาโปรแกรมที่รวดเร็ว เรียบง่าย และมีประสิทธิภาพ
  * Jekyll เขียนด้วย Ruby ภาษาโปรแกรมที่ได้รับความนิยม มีเว็บเฟรมเวิร์กที่พร้อมใช้งาน  เหมาะสำหรับการสร้างเว็บไซต์อย่างรวดเร็ว
