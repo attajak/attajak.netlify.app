@@ -85,6 +85,7 @@ pygmentOptions = "linenos=inline"
   # strava = "userid"
 
 [[menu.main]]
+    identifier = "home"
     name = "Home"
     url = "/"
     weight = 1
@@ -92,39 +93,31 @@ pygmentOptions = "linenos=inline"
 [[menu.main]]
     identifier = "blog"
     name = "Blog"
+    url = "posts"
     weight = 2
-    
+
 [[menu.main]]
     parent = "blog"
-    name = "Posts"
-    url = "posts"
+    identifier = "categories"
+    name = "Categories"
+    url = "categories"
     weight = 1
 
 [[menu.main]]
     parent = "blog"
-    name = "Categories"
-    url = "categories"
-    weight = 2
-
-[[menu.main]]
-    parent = "blog"
+    identifier = "tags"
     name = "Tags"
     url = "tags"
-    weight = 3
+    weight = 2
 
 [[menu.main]]
     identifier = "about"
     name = "About"
+    url = "about"
     weight = 3
 
 [[menu.main]]
-    parent = "about"
-    name = "About"
-    url = "about"
-    weight = 1
-
-[[menu.main]]
-    parent = "about"
+    identifier = "contact"
     name = "Contact"
     url = "contact"
-    weight = 2
+    weight = 4
