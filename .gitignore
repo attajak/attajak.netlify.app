@@ -1,11 +1,16 @@
+# Hugo
 public/
 resources/
 _vendor/
 .hugo_build.lock
+
+# Go
 go.sum
-node_modules
+
+# JavaScript
+node_modules/
 package-lock.json
-assets/jsconfig.json
+jsconfig.json
 
 # Local Netlify folder
 .netlify
