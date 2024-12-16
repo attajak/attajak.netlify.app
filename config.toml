@@ -24,9 +24,9 @@ pygmentOptions = "linenos=inline"
 
 [Params]
   homeTitle = "Attajak" # Set a different text for the header on the home page
-  subtitle = "https://attajak.netlify.app"
+  subtitle = "attajak.netlify.app"
   mainSections = ["post","posts"]
-  logo = "favicon/apple-touch-icon.png" # Expecting square dimensions
+  logo = "apple-touch-icon.png" # Expecting square dimensions
   favicon = "favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
@@ -57,7 +57,7 @@ pygmentOptions = "linenos=inline"
 [Params.author]
   # Set only your "username" for default hosts and full URLs otherwise (e.g., "https://MyGitLab.org/username")
   name = "Attajak Janrak"
-  website = "https://attajak.github.io"
+  website = "https://attajak.netlify.app"
   email = "janrak@gmail.com"
   facebook = "attajak"
   github = "attajak"
