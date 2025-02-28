@@ -11,7 +11,9 @@ HUGO_ENABLEGITINFO = "true"
 GO_VERSION = "1.24.0"
 
 [context.production]
-command = "hugo --gc --minify --logLevel info"
+# command = "hugo --gc --minify --logLevel info"
+command = "npm run build"
 
 [context.production.environment]
 HUGO_ENV = "production"
+HUGO_ENVIRONMENT = "production"
