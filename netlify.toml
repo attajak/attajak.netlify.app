@@ -1,19 +1,21 @@
 [build]
-  # command = "hugo --gc --minify --logLevel info"
-  # functions = "netlify/functions"
+  command = "hugo --gc --minify -b $URL"
   publish = "public"
 
 [build.environment]
-NODE_VERSION = "22.13.1"
-NPM_VERSION = "10.9.2"
-HUGO_VERSION = "0.145.0"
-HUGO_ENABLEGITINFO = "true"
-GO_VERSION = "1.24.0"
-
-[context.production]
-# command = "hugo --gc --minify --logLevel info"
-command = "npm run build"
+  HUGO_VERSION = "0.136.5"
+  HUGO_ENABLEGITINFO = "true"
 
 [context.production.environment]
-HUGO_ENV = "production"
-HUGO_ENVIRONMENT = "production"
+  HUGO_ENV = "production"
+
+[context.deploy-preview]
+  command = "hugo --gc --minify -D -E -F -b $DEPLOY_PRIME_URL"
+
+[context.branch-deploy]
+  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+
+[[plugins]]
+  package = "netlify-plugin-hugo-cache-resources"
+  [plugins.inputs]
+    debug = true
