@@ -1,5 +1,7 @@
 # [Creator's Blog: Hugo Theme](https://github.com/HugoBlox/theme-blog)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e7bbc17c-a776-4e2e-abf7-1f36f2bdd9a8/deploy-status)](https://app.netlify.com/sites/attajak/deploys)
+
 [![Screenshot](./.github/preview.png)](https://hugoblox.com/templates/)
 
 The **Creator's Blog** Hugo Theme empowers you to easily create your own _personal blog_ or _build a business around your content_.
