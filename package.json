@@ -1,17 +1,34 @@
 {
-  "name": "hugo-blox-blog",
-  "private": "true",
+  "name": "attajak.netlify.app",
   "version": "1.0.0",
+  "private": "true",
   "description": "[![Screenshot](./.github/preview.png)](https://hugoblox.com/templates/)",
+  "keywords": [
+    "attajak",
+    "janrak",
+    "hugo",
+    "blox",
+    "blog",
+    "netlify"
+  ],
+  "homepage": "https://github.com/attajak/attajak.netlify.app#readme",
+  "bugs": {
+    "url": "https://github.com/attajak/attajak.netlify.app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/attajak/attajak.netlify.app.git"
+  },
+  "license": "MIT",
+  "author": "attajak (https://github.com/attajak/)",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "create": "hugo new content",
     "build": "hugo --gc --minify --logLevel info",
-    "server": "hugo server -D -E -F -N -O --renderToMemory --disableFastRender -b http://localhost:1313/ --logLevel info",
+    "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost:1313/ --logLevel info",
+    "server:production": "npm run server -- -e production",
     "update": "hugo mod get -u && hugo mod tidy && hugo mod graph"
-  },
-  "keywords": ["attajak", "janrak", "hugo", "blox", "blog"],
-  "author": "attajak (https://github.com/attajak/)",
-  "license": "ISC"
+  }
 }
