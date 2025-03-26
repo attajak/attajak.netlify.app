@@ -11,7 +11,7 @@
   HUGO_ENV = "production"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL && npx pagefind --source 'public'"
+  command = "hugo --gc --minify -D -E -F -b $DEPLOY_PRIME_URL && npx pagefind --source 'public'"
 
 [context.branch-deploy]
   command = "hugo --gc --minify -b $DEPLOY_PRIME_URL && npx pagefind --source 'public'"
