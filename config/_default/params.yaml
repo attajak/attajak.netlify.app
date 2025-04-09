@@ -55,7 +55,7 @@ features:
   privacy_pack:
     enable: true
   repository:
-    url: 'https://github.com/attajak/hugo-blox-blog/'
+    url: 'https://github.com/attajak/attajak.netlify.app/'
     content_dir: content
     branch: main
 
