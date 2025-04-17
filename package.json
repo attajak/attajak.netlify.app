@@ -25,7 +25,7 @@
   "main": "index.js",
   "scripts": {
     "create": "hugo new content",
-    "build": "hugo --gc --minify --logLevel info",
+    "build": "hugo --gc --minify --logLevel info && npx pagefind --source 'public'",
     "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost:1313/ --logLevel info",
     "server:production": "npm run server -- -e production",
     "update": "hugo mod get -u && hugo mod tidy && hugo mod graph"
