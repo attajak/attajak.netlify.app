@@ -24,7 +24,6 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "create": "hugo new content",
     "build": "hugo --gc --minify --logLevel info",
     "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost:1313/ --logLevel info",
