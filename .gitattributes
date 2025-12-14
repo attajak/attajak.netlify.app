@@ -1,0 +1,2 @@
+config/**/*.yaml linguist-detectable
+content/**/*.md linguist-detectable
