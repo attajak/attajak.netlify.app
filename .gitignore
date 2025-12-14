@@ -8,7 +8,7 @@ go.sum
 # Node.js
 node_modules/
 package-lock.json
-assets/jsconfig.json
+jsconfig.json
 
 # Notebook
 .ipynb_checkpoints
