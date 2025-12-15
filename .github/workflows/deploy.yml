@@ -73,13 +73,9 @@ jobs:
       with:
         hugo-version: ${{ env.HUGO_VERSION }}
         extended: true
-<<<<<<< HEAD:.github/workflows/deploy.yml
 
       # Cache dependencies (Go modules, node_modules) - stable, rarely changes
-    - uses: actions/cache@v4
-=======
     - uses: actions/cache@v5
->>>>>>> main:.github/workflows/publish.yaml
       with:
         path: |
           /tmp/hugo_cache_runner/
