@@ -29,5 +29,11 @@
     "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost:1313/ --logLevel info",
     "server:production": "npm run server -- -e production",
     "update": "hugo mod get -u && hugo mod tidy && hugo mod graph"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "@tailwindcss/typography": "^0.5.19",
+    "preact": "^10.28.0",
+    "tailwindcss": "^4.1.18"
   }
 }
