@@ -22,7 +22,7 @@
   "license": "MIT",
   "author": "attajak (https://github.com/attajak/)",
   "type": "module",
-  "main": "index.js",i
+  "main": "index.js",
   "packageManager": "pnpm@10.27.0",
   "scripts": {
     "new": "hugo new content",
