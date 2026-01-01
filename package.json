@@ -25,15 +25,16 @@
   "main": "index.js",
   "scripts": {
     "new": "hugo new content",
-    "build": "hugo --gc --minify --logLevel info && npx pagefind --source 'public'",
-    "start": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost:1313/ --logLevel info",
+    "build": "hugo --gc --minify --logLevel info && pnpx pagefind --source 'public'",
+    "start": "hugo server -D -E -F -M -N -O --gc --minify --disableFastRender --bind 0.0.0.0 -b http://localhost:1313/ --logLevel info",
     "server:production": "pnpm run start -- -e production",
-    "update": "hugo mod get -u && hugo mod tidy && hugo mod graph"
+    "update": "pnpm update && hugo mod get -u && hugo mod tidy",
+    "dependencies": "pnpm list && hugo mod graph"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
     "@tailwindcss/typography": "^0.5.19",
-    "preact": "^10.28.0",
+    "preact": "^10.28.1",
     "tailwindcss": "^4.1.18"
   }
 }
