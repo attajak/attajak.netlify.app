@@ -23,14 +23,13 @@
   "author": "attajak (https://github.com/attajak/)",
   "type": "module",
   "main": "index.js",
-  "packageManager": "pnpm@10.27.0",
   "scripts": {
     "new": "hugo new content",
     "build": "hugo --gc --minify --logLevel info && pnpx pagefind --source 'public'",
     "start": "hugo server -D -E -F -M -N -O --gc --minify --disableFastRender --bind 0.0.0.0 -b http://localhost:1313/ --logLevel info",
-    "server:production": "pnpm run start -- -e production",
-    "update": "pnpm update && hugo mod get -u && hugo mod tidy",
-    "dependencies": "pnpm list && hugo mod graph"
+    "server:production": "npm run start -- -e production",
+    "update": "npm update && hugo mod get -u && hugo mod tidy",
+    "dependencies": "npm list && hugo mod graph"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
