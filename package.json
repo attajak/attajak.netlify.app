@@ -36,5 +36,7 @@
     "@tailwindcss/typography": "^0.5.19",
     "preact": "^10.28.1",
     "tailwindcss": "^4.1.18"
+  ,
+  "packageManager": "pnpm@10.27.0"
   }
 }

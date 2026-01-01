@@ -8,6 +8,10 @@ go.sum
 # Node.js
 node_modules/
 package-lock.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
+yarn.lock
+deno.lock
 jsconfig.json
 
 # Notebook
@@ -15,6 +19,3 @@ jsconfig.json
 
 # Local Netlify folder
 .netlify
-
-pnpm-lock.yaml
-deno.lock
