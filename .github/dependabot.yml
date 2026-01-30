@@ -9,7 +9,17 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "weekly"
+    assignees:
+      - "attajak"
   - package-ecosystem: "gomod"
     directory: "/"
     schedule:
       interval: "weekly"
+    assignees:
+      - "attajak"
+  - package-ecosystem: "gitsubmodule"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    assignees:
+      - "attajak"
