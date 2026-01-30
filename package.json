@@ -26,10 +26,10 @@
   "scripts": {
     "new": "hugo new content",
     "build": "hugo --gc --minify --logLevel info && pnpx pagefind --source 'public'",
-    "start": "hugo server -D -E -F -M -N -O --gc --minify --disableFastRender --bind 0.0.0.0 -b http://localhost:1313/ --logLevel info",
-    "server:production": "npm run start -- -e production",
+    "server": "hugo server -D -E -F -M -N -O --gc --minify --disableFastRender --bind 0.0.0.0 -b http://localhost:1313/ --logLevel info",
+    "server:production": "npm run server -- -e production",
     "update": "npm update && hugo mod get -u && hugo mod tidy",
-    "dependencies": "npm list && hugo mod graph"
+    "deps": "npm list && hugo mod graph"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",

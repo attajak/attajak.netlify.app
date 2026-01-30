@@ -1,0 +1,33 @@
+"schema": "hugoblox/author/v1"
+"slug": "me"
+"name":
+  "display": "Attajak Janrak"
+  "given": "Attajak"
+  "family": "Janrak"
+"is_owner": true
+"status":
+  "icon": "😉"
+"role": "Leader"
+"bio": "ชื่อคิง เกิด ๘ สิงหาฯ เลือดกรุ๊ปเอ ชอบดูหนัง ฟังเพลง เล่นเกม 🇹🇭"
+"affiliations":
+  - "name": "Home"
+    "url": "https://attajak.pages.dev"
+"links":
+  - "icon": "at-symbol"
+    "url": "mailto:janrak@gmail.com"
+    "label": "E-mail Me"
+  - "icon": "brands/x"
+    "url": "https://twitter.com/attajak"
+  - "icon": "brands/instagram"
+    "url": "https://www.instagram.com/attajak"
+  - "icon": "brands/linkedin"
+    "url": "https://www.linkedin.com/in/attajak"
+  - "icon": "academicons/cv"
+    "url": "uploads/resume.pdf"
+    "label": "Download my resume"
+  - "icon": "rss"
+    "url": "./post/index.xml"
+    "label": "Subscribe to my blog via RSS feed"
+  - "icon": "link"
+    "url": "https://attajak.pages.dev"
+    "label": "Website"
