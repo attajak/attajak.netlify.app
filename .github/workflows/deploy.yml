@@ -1,7 +1,7 @@
 name: Deploy website to GitHub Pages
 
 env:
-  NODE_VERSION: '22'
+  NODE_VERSION: '24'
 
 on:
   # Trigger the workflow every time you push to the `main` branch
@@ -46,7 +46,7 @@ jobs:
         submodules: true
 
     - name: Setup Node.js
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v6
       with:
         node-version: ${{ env.NODE_VERSION }}
 
@@ -104,7 +104,7 @@ jobs:
         HUGO_ENVIRONMENT: production
       run: |
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-        hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
+        hugo --gc --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
     - name: Generate Pagefind search index (if applicable)
       run: |
