@@ -21,9 +21,9 @@
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.154.1"
-  GO_VERSION = "1.25.4"
-  NODE_VERSION = "24.12.0"
+  HUGO_VERSION = "0.156.0"
+  GO_VERSION = "1.26.0"
+  NODE_VERSION = "24.13.0"
   HUGO_ENABLEGITINFO = "true"
   HUGO_LOG_I18N_WARNINGS = "true"
   HUGO_LOG_WARNINGS = "true"
@@ -56,4 +56,7 @@
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
   [plugins.inputs]
-    debug = true
+  # If it should show more verbose logs (optional, default = true)
+  debug = true
+  # Relative path to source directory in case you use Hugo's "--s" option
+  srcdir = "/"

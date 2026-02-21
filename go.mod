@@ -3,8 +3,7 @@ module github.com/attajak/attajak.netlify.app
 go 1.25
 
 require (
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-analytics v0.3.0 // indirect
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms v0.2.0 // indirect
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify v1.2.0 // indirect
-	github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind v0.10.0 // indirect
+	github.com/HugoBlox/kit/modules/analytics v0.3.2-0.20260102220147-93d45a6e89a3 // indirect
+	github.com/HugoBlox/kit/modules/blox v0.0.0-20260219145709-764756ab501c // indirect
+	github.com/HugoBlox/kit/modules/integrations/netlify v1.2.2-0.20260102210655-66cba27dc652 // indirect
 )

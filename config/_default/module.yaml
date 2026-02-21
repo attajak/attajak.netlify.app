@@ -5,17 +5,22 @@
 ############################
 
 imports:
-  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-netlify
-  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-tailwind
-  - path: github.com/HugoBlox/hugo-blox-builder/modules/blox-plugin-decap-cms
+  - path: github.com/HugoBlox/kit/modules/integrations/netlify
+  - path: github.com/HugoBlox/kit/modules/blox
 
 # Install any Hugo Blox within the `hugo-blox/blox/` folder
 mounts:
-  - source: hugo-blox/blox/community
+  - files:
+      - '**.html'
+    source: hugo-blox/blox/community
     target: layouts/partials/blox/community/
-  - source: hugo-blox/blox/all-access
+  - files:
+      - '**.html'
+    source: hugo-blox/blox/all-access
     target: layouts/partials/blox/
-  - source: hugo-blox/blox
+  - files:
+      - '**.css'
+    source: hugo-blox/blox
     target: assets/dist/community/blox/
   - source: layouts
     target: layouts

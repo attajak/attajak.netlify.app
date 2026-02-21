@@ -24,17 +24,23 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "new": "hugo new content",
+    "clean": "rm -rf .hugo_build.lock _vendor resources public",
+    "create": "hugo new content",
     "build": "hugo --gc --minify --logLevel info && pnpx pagefind --source 'public'",
-    "server": "hugo server -D -E -F -M -N -O --gc --minify --disableFastRender --bind 0.0.0.0 -b http://localhost:1313/ --logLevel info",
-    "server:production": "npm run server -- -e production",
-    "update": "npm update && hugo mod get -u && hugo mod tidy",
-    "deps": "npm list && hugo mod graph"
+    "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost --logLevel info",
+    "server:production": "pnpm run server -- -e production",
+    "update": "pnpm update && hugo mod get -u && hugo mod tidy",
+    "deps": "pnpm list && hugo mod graph",
+    "start": "pnpm run server",
+    "preview": "pnpm run server:production"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.18",
     "@tailwindcss/typography": "^0.5.19",
     "preact": "^10.28.1",
     "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "netlify-plugin-hugo-cache-resources": "^0.2.0"
   }
 }
