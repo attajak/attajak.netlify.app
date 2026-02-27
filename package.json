@@ -24,7 +24,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf .hugo_build.lock _vendor resources public",
+    "clean": "hugo mod clean && rm -rf .hugo_build.lock _vendor/ node_modules/ resources/ public/",
     "create": "hugo new content",
     "build": "hugo --gc --minify --logLevel info && pnpx pagefind --source 'public'",
     "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost --logLevel info",
