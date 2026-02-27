@@ -35,10 +35,10 @@
     "preview": "pnpm run server:production"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.2.0",
+    "@tailwindcss/cli": "^4.2.1",
     "@tailwindcss/typography": "^0.5.19",
     "preact": "^10.28.4",
-    "tailwindcss": "^4.2.0"
+    "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
     "netlify-plugin-hugo-cache-resources": "^0.2.1"
