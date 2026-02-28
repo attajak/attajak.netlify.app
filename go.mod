@@ -1,6 +1,6 @@
 module github.com/attajak/attajak.netlify.app
 
-go 1.25
+go 1.26
 
 require (
 	github.com/HugoBlox/kit/modules/analytics v0.3.2-0.20260219152919-4fcfe33cc04a // indirect

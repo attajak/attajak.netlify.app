@@ -14,16 +14,18 @@
     hugo --gc --minify -b $URL --logLevel debug --printI18nWarnings --printPathWarnings
     
     echo "=== Running Pagefind indexing ==="
-    pnpm dlx pagefind --source 'public' --verbose
+    pnpm run pagefind
     
     echo "=== Build completed successfully ==="
   """
   publish = "public"
 
 [build.environment]
-  HUGO_VERSION = "0.156.0"
+  HUGO_VERSION = "0.157.0"
   GO_VERSION = "1.26.0"
-  NODE_VERSION = "24.13.0"
+  NODE_VERSION = "24"
+  # Ensure Netlify's implicit install does not force a frozen lockfile
+  PNPM_FLAGS = "--no-frozen-lockfile"
   HUGO_ENABLEGITINFO = "true"
   HUGO_LOG_I18N_WARNINGS = "true"
   HUGO_LOG_WARNINGS = "true"
@@ -40,7 +42,7 @@
     echo "Deploy URL: $DEPLOY_PRIME_URL"
     pnpm install --verbose --no-frozen-lockfile
     hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL --logLevel debug --printI18nWarnings --printPathWarnings
-    pnpm dlx pagefind --source 'public' --verbose
+    pnpm run pagefind
   """
 
 [context.branch-deploy]
@@ -50,13 +52,10 @@
     echo "Deploy URL: $DEPLOY_PRIME_URL"
     pnpm install --verbose --no-frozen-lockfile
     hugo --gc --minify -b $DEPLOY_PRIME_URL --logLevel debug --printI18nWarnings --printPathWarnings
-    pnpm dlx pagefind --source 'public' --verbose
+    pnpm run pagefind
   """
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
   [plugins.inputs]
-  # If it should show more verbose logs (optional, default = true)
-  debug = true
-  # Relative path to source directory in case you use Hugo's "--s" option
-  srcdir = "/"
+    debug = true
