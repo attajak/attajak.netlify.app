@@ -32,7 +32,8 @@
     "update": "pnpm update && hugo mod get -u && hugo mod tidy",
     "deps": "pnpm list && hugo mod graph",
     "start": "pnpm run server",
-    "preview": "pnpm run server:production"
+    "preview": "pnpm run server:production",
+    "pagefind": "pagefind --site public"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",
