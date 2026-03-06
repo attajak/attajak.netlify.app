@@ -12,7 +12,7 @@ baseURL: 'https://attajak.netlify.app/' # Website URL
 
 cascade:
   # Blog post options
-  - _target:
+  - target:
       path: /blog/**
       kind: page
     pager: true
@@ -34,7 +34,7 @@ cascade:
 ############################
 
 defaultContentLanguage: en
-hasCJKLanguage: false
+hasCJKLanguage: true
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 

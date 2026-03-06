@@ -25,15 +25,17 @@
   "main": "index.js",
   "scripts": {
     "clean": "hugo mod clean && rm -rf .hugo_build.lock _vendor/ node_modules/ resources/ public/",
-    "create": "hugo new content",
-    "build": "hugo --gc --minify --logLevel info && pnpm run pagefind",
-    "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost --logLevel info",
+    "new": "hugo new",
+    "build": "hugo --gc --minify --logLevel debug && pnpm run pagefind",
+    "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost --logLevel debug",
     "server:production": "pnpm run server -- -e production",
-    "update": "pnpm update && hugo mod get -u && hugo mod tidy",
+    "update": "pnpm update && hugoblox update -y && hugo mod get -u && hugo mod tidy",
     "deps": "pnpm list && hugo mod graph",
     "start": "pnpm run server",
     "preview": "pnpm run server:production",
-    "pagefind": "pagefind --site public"
+    "pagefind": "pagefind --site public",
+    "hugoblox": "hugoblox",
+    "doctor": "hbx doctor"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.2.1",
