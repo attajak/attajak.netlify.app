@@ -1,4 +1,4 @@
-# [Creator's Blog: Hugo Theme](https://github.com/HugoBlox/theme-blog)
+# [Creator's Blog: Hugo Theme](https://github.com/HugoBlox/hugo-theme-data-science-blog)
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e7bbc17c-a776-4e2e-abf7-1f36f2bdd9a8/deploy-status)](https://app.netlify.com/sites/attajak/deploys)
 
@@ -10,7 +10,7 @@ The **Creator's Blog** Hugo Theme empowers you to easily create your own _person
 
 [![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
 [![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+[![Twitter Follow](https://img.shields.io/twitter/follow/MakeOwnable?label=Follow%20on%20Twitter)](https://x.com/MakeOwnable)
 
 Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
 
@@ -20,16 +20,16 @@ The integrated [**Hugo Blox**](https://hugoblox.com) website builder and CMS mak
 
 - 👉 [**Get Started**](https://hugoblox.com/templates/)
 - 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
+- 💬 [Chat with the **HugoBlox Kit community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
 - ⬇️ **Automatically import citations from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 🐦 Share your new site with the community: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
+- 🐦 Share your new site with the community: [@MakeOwnable](https://x.com/MakeOwnable)  [#MadeWithHugoBlox](https://x.com/search?q=%23MadeWithHugoBlox&src=typed_query)
 - 🗳 [Take the survey and help us improve #OpenSource](https://forms.gle/NioD9VhUg7PNmdCAA)
-- 🚀 [Contribute improvements](https://github.com/HugoBlox/hugo-blox-builder/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+- 🚀 [Contribute improvements](https://github.com/HugoBlox/kit/blob/main/CONTRIBUTING.md) or [suggest improvements](https://github.com/HugoBlox/kit/issues)
+- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/) and [Release Notes](https://github.com/HugoBlox/kit/releases)
 
 ## We ask you, humbly, to support this open source movement
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+Today we ask you to defend the open source independence of the HugoBlox Kit and themes 🐧
 
 We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
 
