@@ -20,7 +20,11 @@
     "url": "git+https://github.com/attajak/attajak.netlify.app.git"
   },
   "license": "MIT",
-  "author": "attajak (https://github.com/attajak/)",
+  "author": {
+    "name": "attajak",
+    "email": "janrak@gmail.com",
+    "link": "https://github.com/attajak"
+  },
   "type": "module",
   "main": "index.js",
   "scripts": {
@@ -29,23 +33,28 @@
     "build": "hugo --gc --minify --logLevel debug && pnpm run pagefind",
     "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost --logLevel debug",
     "server:production": "pnpm run server -- -e production",
-    "update": "pnpm update && hugo mod get -u && hugo mod tidy",
-    "deps": "pnpm list && hugo mod graph",
+    "update": "hugo mod get -u && hugo mod tidy && hugo mod npm pack && pnpm install && pnpm update",
+    "list:deps": "hugo mod graph && pnpm list",
+    "list:content": "hugo list content all",
     "start": "pnpm run server",
     "preview": "pnpm run server:production",
     "pagefind": "pagefind --site public",
-    "hugoblox": "hugoblox",
+    "upgrade": "hbx upgrade --yes",
     "doctor": "hbx doctor"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.2.1",
+    "@tailwindcss/cli": "^4.2.2",
     "@tailwindcss/typography": "^0.5.19",
     "pagefind": "^1.4.0",
-    "preact": "^10.28.4",
-    "tailwindcss": "^4.2.1"
+    "preact": "^10.29.0",
+    "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
+    "hugoblox": "^0.12.7",
     "netlify-plugin-hugo-cache-resources": "^0.2.1"
   },
-  "packageManager": "pnpm@10.30.3"
+  "packageManager": "pnpm@10.33.0",
+  "workspaces": [
+    "packages/hugoautogen"
+  ]
 }

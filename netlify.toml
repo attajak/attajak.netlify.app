@@ -22,7 +22,7 @@
 
 [build.environment]
   HUGO_VERSION = "0.157.0"
-  GO_VERSION = "1.26.0"
+  GO_VERSION = "1.26.1"
   NODE_VERSION = "24"
   # Ensure Netlify's implicit install does not force a frozen lockfile
   PNPM_FLAGS = "--no-frozen-lockfile"
