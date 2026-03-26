@@ -8,9 +8,8 @@ tags:
   - Second Brain
   - Markdown
 image:
-  caption: "Image credit: [**Unsplash**](https://unsplash.com)"
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
-
 
 Create a personal knowledge base and share your knowledge with your peers.
 
@@ -36,9 +35,9 @@ Mindmaps can be created by simply writing the items as a Markdown list within th
 ```markmap {height="200px"}
 - Hugo Modules
   - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
+  - netlify
+  - netlify-cms
+  - slides
 ```
 </code>
 </pre>
@@ -49,9 +48,9 @@ renders as
 ```markmap {height="200px"}
 - Hugo Modules
   - Hugo Blox
-  - blox-plugins-netlify
-  - blox-plugins-netlify-cms
-  - blox-plugins-reveal
+  - netlify
+  - netlify-cms
+  - slides
 ```
 
 Anh here's a more advanced mindmap with formatting, code blocks, and math:
@@ -64,7 +63,7 @@ Anh here's a more advanced mindmap with formatting, code blocks, and math:
   - Links
     - [Hugo Blox Docs](https://docs.hugoblox.com/)
     - [Discord Community](https://discord.gg/z8wNYzb)
-    - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
+    - [GitHub](https://github.com/HugoBlox/kit)
   - Features
     - Markdown formatting
     - **inline** ~~text~~ *styles*
@@ -89,7 +88,7 @@ renders as
   - Links
     - [Hugo Blox Docs](https://docs.hugoblox.com/)
     - [Discord Community](https://discord.gg/z8wNYzb)
-    - [GitHub](https://github.com/HugoBlox/hugo-blox-builder)
+    - [GitHub](https://github.com/HugoBlox/kit)
   - Features
     - Markdown formatting
     - **inline** ~~text~~ *styles*
@@ -116,7 +115,7 @@ renders as
 
 Use [callouts](https://docs.hugoblox.com/reference/markdown/#callouts) (aka _asides_, _hints_, or _alerts_) to draw attention to notes, tips, and warnings.
 
-By using standard Markdown blockquotes with a specific type, they will render as an aside.
+Use the `> [!NOTE]` syntax to create a callout.
 
 ```markdown
 > [!NOTE]
