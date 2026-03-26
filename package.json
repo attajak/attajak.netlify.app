@@ -40,7 +40,8 @@
     "preview": "pnpm run server:production",
     "pagefind": "pagefind --site public",
     "upgrade": "hbx upgrade --yes",
-    "doctor": "hbx doctor"
+    "doctor": "hbx doctor",
+    "deploy": "netlify deploy --prod --dir=public"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.2.2",
@@ -51,6 +52,7 @@
   },
   "devDependencies": {
     "hugoblox": "^0.12.7",
+    "netlify-cli": "^24.6.2",
     "netlify-plugin-hugo-cache-resources": "^0.2.1"
   },
   "packageManager": "pnpm@10.33.0",
