@@ -51,6 +51,7 @@
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
+    "@netlify/plugin-lighthouse": "^6.0.4",
     "hugoblox": "^0.12.7",
     "netlify-cli": "^24.6.2",
     "netlify-plugin-hugo-cache-resources": "^0.2.1"

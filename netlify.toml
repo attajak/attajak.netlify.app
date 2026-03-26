@@ -8,7 +8,7 @@
     echo "Go version: $(go version || echo 'Go not available')"
     
     echo "=== Installing dependencies ==="
-    pnpm install --verbose --no-frozen-lockfile
+    hugo mod npm pack && pnpm install --verbose --no-frozen-lockfile
     
     echo "=== Running Hugo build ==="
     hugo --gc --minify -b $URL --logLevel debug --printI18nWarnings --printPathWarnings
@@ -59,3 +59,9 @@
   package = "netlify-plugin-hugo-cache-resources"
   [plugins.inputs]
     debug = true
+
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+  # optional, deploy the lighthouse report to a path under your site
+  [plugins.inputs.audits]
+    output_path = "reports/lighthouse.html"
