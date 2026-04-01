@@ -1,0 +1,6 @@
+modules = ["go-1.25", "nodejs-24"]
+[agent]
+expertMode = true
+
+[nix]
+channel = "stable-25_05"
