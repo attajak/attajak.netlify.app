@@ -11,7 +11,7 @@
 "bio": "ชื่อคิง เกิด ๘ สิงหาฯ เลือดกรุ๊ปเอ ชอบดูหนัง ฟังเพลง เล่นเกม 🇹🇭"
 "affiliations":
   - "name": "Home"
-    "url": "https://attajak.pages.dev"
+    "url": "https://attajak.netlify.app"
 "links":
   - "icon": "at-symbol"
     "url": "mailto:janrak@gmail.com"
@@ -29,5 +29,5 @@
     "url": "./post/index.xml"
     "label": "Subscribe to my blog via RSS feed"
   - "icon": "link"
-    "url": "https://attajak.pages.dev"
+    "url": "https://attajak.netlify.app"
     "label": "Website"

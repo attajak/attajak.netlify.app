@@ -23,7 +23,7 @@
   "author": {
     "name": "attajak",
     "email": "janrak@gmail.com",
-    "link": "https://github.com/attajak"
+    "url": "https://github.com/attajak"
   },
   "type": "module",
   "main": "index.js",
@@ -46,14 +46,14 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.2.2",
     "@tailwindcss/typography": "^0.5.19",
-    "pagefind": "^1.4.0",
-    "preact": "^10.29.0",
+    "pagefind": "^1.5.0",
+    "preact": "^10.29.1",
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
     "@netlify/plugin-lighthouse": "^6.0.4",
-    "hugoblox": "^0.12.7",
-    "netlify-cli": "^24.6.2",
+    "hugoblox": "^0.12.8",
+    "netlify-cli": "^24.10.0",
     "netlify-plugin-hugo-cache-resources": "^0.2.1"
   },
   "packageManager": "pnpm@10.33.0",
