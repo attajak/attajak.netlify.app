@@ -29,11 +29,12 @@
   "main": "index.js",
   "scripts": {
     "clean": "hugo mod clean && rm -rf .hugo_build.lock _vendor/ node_modules/ resources/ public/",
-    "new": "hugo new",
+    "new": "hugo new content",
     "build": "hugo --gc --minify --logLevel debug && pnpm run pagefind",
     "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost --logLevel debug",
     "server:production": "pnpm run server -- -e production",
     "update": "hugo mod get -u && hugo mod tidy && hugo mod npm pack && pnpm update && hugo mod npm pack",
+    "npm:pack": "hugo mod npm pack",
     "list:deps": "hugo mod graph && pnpm list",
     "list:content": "hugo list content all",
     "start": "pnpm run server",
@@ -46,14 +47,14 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.2.2",
     "@tailwindcss/typography": "^0.5.19",
-    "pagefind": "^1.5.0",
+    "pagefind": "^1.5.2",
     "preact": "^10.29.1",
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
     "@netlify/plugin-lighthouse": "^6.0.4",
     "hugoblox": "^0.12.8",
-    "netlify-cli": "^24.11.1",
+    "netlify-cli": "^24.11.3",
     "netlify-plugin-hugo-cache-resources": "^0.2.1"
   },
   "packageManager": "pnpm@10.33.0",
