@@ -1,8 +1,9 @@
 run = "npm run server"
 modules = ["go-1.25", "nodejs-24"]
-[agent]
-expertMode = true
 
 [nix]
 channel = "stable-25_05"
 packages = ["hugo"]
+
+[agent]
+expertMode = true
