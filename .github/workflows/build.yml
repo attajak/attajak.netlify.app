@@ -1,7 +1,7 @@
 name: Build
 
 env:
-  NODE_VERSION: '24'
+  NODE_VERSION: '20'
 
 on:
   # Standalone trigger for PR validation
@@ -38,7 +38,6 @@ jobs:
       with:
         # Fetch history for Hugo's .GitInfo and .Lastmod
         fetch-depth: 0
-        submodules: true
 
     - name: Setup Node.js
       uses: actions/setup-node@v6
@@ -47,13 +46,13 @@ jobs:
 
     - name: Setup pnpm
       if: hashFiles('package.json') != ''
-      uses: pnpm/action-setup@v6
+      uses: pnpm/action-setup@v4
 
     - name: Get Hugo Version
       id: hugo-version
       run: |
         # Install pinned yq version for robust YAML parsing
-        YQ_VERSION="v4.52.5"
+        YQ_VERSION="v4.44.1"
         if ! wget -q --tries=3 --waitretry=1 -O /tmp/yq \
           "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64"; then
           echo "::error::Failed to download yq"
@@ -63,10 +62,10 @@ jobs:
         sudo chmod +x /usr/local/bin/yq
         
         # Read hugo_version from hugoblox.yaml
-        VERSION=$(yq '.hugo_version // ""' hugoblox.yaml 2>/dev/null | grep -v '^null$' || true)
+        VERSION=$(yq '.build.hugo_version // ""' hugoblox.yaml 2>/dev/null | grep -v '^null$' || true)
         
         # Fallback to a known stable version if not specified
-        DEFAULT_VERSION="0.160.1"
+        DEFAULT_VERSION="0.154.5"
         VERSION=${VERSION:-$DEFAULT_VERSION}
         
         # Validate version format (basic check)
@@ -113,13 +112,17 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-hugo-resources-
 
+    - name: Setup Pages
+      id: pages
+      uses: actions/configure-pages@v5
+
     - name: Build with Hugo
       env:
         HUGO_ENVIRONMENT: production
         HUGO_BLOX_LICENSE: ${{ secrets.HUGO_BLOX_LICENSE }}
       run: |
         echo "Hugo Cache Dir: $(hugo config | grep cachedir)"
-        hugo --gc --minify --logLevel info
+        hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
     - name: Generate Pagefind search index (if applicable)
       run: |
@@ -130,6 +133,6 @@ jobs:
 
     - name: Upload artifact
       id: upload
-      uses: actions/upload-pages-artifact@v5
+      uses: actions/upload-pages-artifact@v4
       with:
         path: ./public

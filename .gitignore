@@ -3,16 +3,17 @@ public/
 resources/
 .hugo_build.lock
 hugo_stats.json
-# go.sum
+go.sum
 
 # Node.js
 node_modules/
-# package-lock.json
-# pnpm-lock.yaml
+package-lock.json
+pnpm-lock.yaml
 # pnpm-workspace.yaml
-# yarn.lock
-# deno.lock
+yarn.lock
+deno.lock
 jsconfig.json
+build/
 
 # Notebook
 .ipynb_checkpoints

@@ -31,30 +31,28 @@
     "clean": "hugo mod clean && rm -rf .hugo_build.lock _vendor/ node_modules/ resources/ public/",
     "new": "hugo new content",
     "build": "hugo --gc --minify --logLevel debug && pnpm run pagefind",
-    "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost --logLevel debug",
+    "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost:1313 --logLevel debug",
     "server:production": "pnpm run server -- -e production",
-    "update": "hugo mod get -u && hugo mod tidy && hugo mod npm pack && pnpm update && hugo mod npm pack",
+    "update": "hugo mod get -u && hugo mod tidy && pnpm update",
     "npm:pack": "hugo mod npm pack",
     "list:deps": "hugo mod graph && pnpm list",
     "list:content": "hugo list content all",
     "start": "pnpm run server",
     "preview": "pnpm run server:production",
     "pagefind": "pagefind --site public",
-    "upgrade": "hbx upgrade --yes",
-    "doctor": "hbx doctor",
-    "deploy": "netlify deploy --prod --dir=public"
+    "upgrade": "pnpx hbx upgrade --yes --ci",
+    "doctor": "pnpx hbx doctor",
+    "deploy": "pnpx netlify deploy --prod --dir=public"
   },
   "dependencies": {
-    "@tailwindcss/cli": "^4.2.2",
-    "@tailwindcss/typography": "^0.5.19",
-    "pagefind": "^1.5.2",
-    "preact": "^10.29.1",
-    "tailwindcss": "^4.2.2"
+    "@tailwindcss/cli": "^4.1.12",
+    "@tailwindcss/typography": "^0.5.10",
+    "pagefind": "^1.4.0",
+    "preact": "^10.27.2",
+    "tailwindcss": "^4.1.12"
   },
   "devDependencies": {
     "@netlify/plugin-lighthouse": "^6.0.4",
-    "hugoblox": "^0.12.8",
-    "netlify-cli": "^24.11.3",
     "netlify-plugin-hugo-cache-resources": "^0.2.1"
   },
   "packageManager": "pnpm@10.33.0",

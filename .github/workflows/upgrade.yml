@@ -35,15 +35,14 @@ jobs:
         uses: actions/checkout@v6
         with:
           fetch-depth: 0
-          submodules: recursive
 
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '24'
+          node-version: '22'
 
       - name: Setup pnpm
-        uses: pnpm/action-setup@v6
+        uses: pnpm/action-setup@v4
         with:
           package_json_path: ./package.json
           run_install: false
@@ -51,7 +50,7 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v6
         with:
-          go-version: '1.26'
+          go-version: '1.23'
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
@@ -72,11 +71,11 @@ jobs:
           fi
           
           echo "Running upgrade with flags: $FLAGS"
-          pnpx hugoblox@latest upgrade $FLAGS
+          pnpm dlx hugoblox@latest upgrade $FLAGS
 
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v8
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "chore(deps): upgrade hugoblox modules"

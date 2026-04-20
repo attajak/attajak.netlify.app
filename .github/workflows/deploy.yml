@@ -35,7 +35,7 @@ jobs:
       id: check
       run: |
         # Install pinned yq version for robust YAML parsing
-        YQ_VERSION="v4.52.5"
+        YQ_VERSION="v4.44.1"
         if ! wget -q --tries=3 --waitretry=1 -O /tmp/yq \
           "https://github.com/mikefarah/yq/releases/download/${YQ_VERSION}/yq_linux_amd64"; then
           echo "::error::Failed to download yq"
@@ -80,4 +80,4 @@ jobs:
     steps:
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v5
+      uses: actions/deploy-pages@v4
