@@ -1,7 +1,7 @@
 name: Build
 
 env:
-  NODE_VERSION: '20'
+  NODE_VERSION: '24'
 
 on:
   # Standalone trigger for PR validation
@@ -38,6 +38,7 @@ jobs:
       with:
         # Fetch history for Hugo's .GitInfo and .Lastmod
         fetch-depth: 0
+        submodules: true
 
     - name: Setup Node.js
       uses: actions/setup-node@v6
