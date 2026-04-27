@@ -71,7 +71,7 @@ jobs:
           fi
           
           echo "Running upgrade with flags: $FLAGS"
-          pnpx hugoblox@latest upgrade $FLAGS
+          pnpm --allow-build=keytar dlx hugoblox@latest upgrade $FLAGS
 
 
       - name: Create Pull Request
