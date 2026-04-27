@@ -71,7 +71,7 @@ jobs:
           fi
           
           echo "Running upgrade with flags: $FLAGS"
-          pnpm ďlx hugoblox@latest upgrade $FLAGS
+          pnpx hugoblox@latest upgrade $FLAGS
 
 
       - name: Create Pull Request
