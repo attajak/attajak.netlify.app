@@ -30,18 +30,18 @@
   "scripts": {
     "clean": "hugo mod clean && rm -rf .hugo_build.lock _vendor/ node_modules/ resources/ public/",
     "new": "hugo new content",
-    "build": "hugo --gc --minify --logLevel debug && pnpm run pagefind",
+    "build": "hugo --gc --minify --logLevel debug --printI18nWarnings --printPathWarnings && pnpm run pagefind",
     "server": "hugo server -D -E -F -M -N -O --disableFastRender --bind 0.0.0.0 -b http://localhost:1313 --logLevel debug",
     "server:production": "pnpm run server -- -e production",
     "update": "hugo mod get -u && hugo mod tidy && pnpm update",
     "npm:pack": "hugo mod npm pack",
     "list:deps": "hugo mod graph && pnpm list",
     "list:content": "hugo list content all",
-    "start": "pnpm run server",
+    "dev": "pnpm run server",
     "preview": "pnpm run server:production",
     "pagefind": "pagefind --site public",
-    "upgrade": "pnpx hbx upgrade --yes --ci",
-    "doctor": "pnpx hbx doctor",
+    "upgrade": "pnpx hugoblox upgrade --yes --ci",
+    "doctor": "pnpx hugoblox doctor",
     "deploy": "pnpx netlify deploy --prod --dir=public"
   },
   "dependencies": {
@@ -55,7 +55,7 @@
     "@netlify/plugin-lighthouse": "^6.0.4",
     "netlify-plugin-hugo-cache-resources": "^0.2.1"
   },
-  "packageManager": "pnpm@10.33.0",
+  "packageManager": "pnpm@10.33.2",
   "workspaces": [
     "packages/hugoautogen"
   ]

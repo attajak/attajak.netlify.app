@@ -39,7 +39,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '22'
+          node-version: '24'
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v6
@@ -71,7 +71,7 @@ jobs:
           fi
           
           echo "Running upgrade with flags: $FLAGS"
-          pnpm dlx hugoblox@latest upgrade $FLAGS
+          pnpx hugoblox@latest upgrade $FLAGS
 
 
       - name: Create Pull Request
