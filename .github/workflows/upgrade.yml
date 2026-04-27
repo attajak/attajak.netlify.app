@@ -55,7 +55,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.159.2' # 'latest'
           extended: true
 
       - name: Run Upgrade CLI
@@ -71,7 +71,7 @@ jobs:
           fi
           
           echo "Running upgrade with flags: $FLAGS"
-          pnpx hugoblox@latest upgrade $FLAGS
+          pnpm ďlx hugoblox@latest upgrade $FLAGS
 
 
       - name: Create Pull Request

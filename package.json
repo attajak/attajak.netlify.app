@@ -40,9 +40,9 @@
     "dev": "pnpm run server",
     "preview": "pnpm run server:production",
     "pagefind": "pagefind --site public",
-    "upgrade": "pnpx hugoblox upgrade --yes --ci",
-    "doctor": "pnpx hugoblox doctor",
-    "deploy": "pnpx netlify deploy --prod --dir=public"
+    "upgrade": "pnpx hugoblox@latest upgrade --yes --ci",
+    "doctor": "pnpx hugoblox@latest doctor",
+    "deploy": "pnpx netlify@latest deploy --prod --dir=public"
   },
   "dependencies": {
     "@tailwindcss/cli": "^4.1.12",
